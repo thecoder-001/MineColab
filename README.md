@@ -11,3 +11,13 @@ Yes, Colab is free to use. But there are some points which, according to me one 
 4. In my opinion (which can be pretty bad sometimes), one should not tell others about the service to others who according to your opinoin, haven't yet reached the level that would allow them to to use the service in a judicial manner. Give them time to develop and allow them to search for this resource themselves.
 
 In the end, it is just my personal opinion and can be ignored safely. Just ask your heart whats right and whats wrong.
+## So, how does it actually work?
+As Goolgle Colab is a vm instance running Ubuntu server as base OS, it can be easily used as a minecraft server. Here are the steps which the notebook performs to setup the server:
+1. Update the system's apt cache.
+2. Install Openjdk-11 (Java) through apt-get.
+3. Mount Google Drive to access the minecraft folder (Drive is used here to provide persistent storage).
+4. Download Ngrok (for setting up a port tunnel).
+5. Setup Ngrok (by asking for key by user and opening a tunnel at port 25565).
+6. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.
+7. List/Print the file list on the screen to indicate succesful directory change.
+8. Startup the Minecraft server (with optimized JVM parameters from <a href="https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/">Aikar's guide</a>)
