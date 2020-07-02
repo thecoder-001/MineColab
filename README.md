@@ -22,3 +22,6 @@ As Goolgle Colab is a vm instance running Ubuntu server as base OS, it can be ea
 6. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.
 7. List/Print the file list on the screen to indicate succesful directory change.
 8. Startup the Minecraft server (with optimized JVM parameters from <a href="https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/">Aikar's guide</a>)
+
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
