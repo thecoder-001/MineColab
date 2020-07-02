@@ -1,5 +1,6 @@
-# MineColab
-Run Minecraft Server on Google Colab
+<h1 align="center">MineColab</h1>
+<p align="center">Run Minecraft Server on Google Colab</p>
+
 ## First of all, what is google Colab?
 As the official FAQ says, colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing free access to computing resources including GPUs.
 In short, it is a vm provided for learning, running python code, machine learning or for general purpose.
