@@ -26,3 +26,6 @@ As Goolgle Colab is a vm instance running Ubuntu server as base OS, it can be ea
 
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
+
+[![test](https://user-images.githubusercontent.com/25097841/86329464-d7692d80-bc63-11ea-8f84-7cc62f125613.gif)](https://github.com/thecoder-001/MineColab)
+
