@@ -12,7 +12,7 @@ Yes, Colab is free to use. But there are some points which, according to me one 
 3. One should not try to spread it as wildfire (in my opinion), that there's a free service available to every living being out there. If such a sudden boom in user base happens, Google would be forced to close down the free teir of google colab, devoiding many hobbists of the free service. Keep it like a secret, telling it to only those who are worthy and know how to use it.
 4. In my opinion (which can be pretty bad sometimes), one should not tell others about the service to others who according to your opinoin, haven't yet reached the level that would allow them to to use the service in a judicial manner. Give them time to develop and allow them to search for this resource themselves.
 
-In the end, it is just my personal opinion and can be ignored safely. Just ask your heart whats right and whats wrong.
+In the end, it is just my personal opinion and can be ignored safely. Just ask your heart whats right and whats wrong. Also, please try to use it as a once in a while resource and not 24x7 so that others can avail the free resources too.
 ## :zap:  So, how does it actually work?
 As Goolgle Colab is a vm instance running Ubuntu server as base OS, it can be easily used as a minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
