@@ -16,7 +16,7 @@ In the end, it is just my personal opinion and can be ignored safely. Just ask y
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
-2. Install Openjdk-11 (Java) through apt-get.
+2. Install Openjdk-15 (Java) through apt-get.
 3. Mount Google Drive to access the minecraft folder (Drive is used here to provide persistent storage).
 4. Setup Ngrok (by asking for key by user and opening a tunnel at port 25565).
 5. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.
