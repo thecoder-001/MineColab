@@ -28,5 +28,5 @@ As Google Colab is a VM running Ubuntu server as base OS, it can be easily used 
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
 
-[![test](https://user-images.githubusercontent.com/25097841/86329464-d7692d80-bc63-11ea-8f84-7cc62f125613.gif)](https://github.com/thecoder-001/MineColab)
+[![test](https://user-images.githubusercontent.com/25097841/101589531-a2c98100-3a0e-11eb-872e-fefa791aaaf6.gif)](https://github.com/thecoder-001/MineColab)
 
