@@ -23,6 +23,13 @@ As Google Colab is a VM running Ubuntu server as base OS, it can be easily used 
 6. List/Print the file list on the screen to indicate succesful directory change.
 7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/)
 
+## 🐛 Found a bug?
+Report report the bug by creating a new issue and use this (helpful) issue template:
+https://github.com/thecoder-001/MineColab/blob/master/.github/ISSUE_TEMPLATE/bug_report.md
+
+Or suggest a new feature using this issue template: 
+https://github.com/thecoder-001/MineColab/blob/master/.github/ISSUE_TEMPLATE/feature_request.md
+
 ## 👍 Tips
 - Use [RaiDrive](https://www.raidrive.com/) to manage your server's files
 
