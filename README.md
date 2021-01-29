@@ -30,6 +30,7 @@ Or suggest a new feature using this [template](https://github.com/thecoder-001/M
 
 ## 👍 Tips
 - Use [RaiDrive](https://www.raidrive.com/) to manage your server's files
+- If something does not work, try using a VPN like [windscribe](https://windscribe.com) before opening an issue.
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
 
