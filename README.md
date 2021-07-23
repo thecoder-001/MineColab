@@ -13,17 +13,20 @@ Yes, Colab is free to use. But there are some points which, according to me one 
 3. One should not try to spread it as wildfire (in my opinion), that there's a free service available to every living being out there. If such a sudden boom in user base happens, Google would be forced to close down the free tier of google colab, devoiding many hobbists of the free service. Keep it like a secret, telling it to only those who are worthy and know how to use it.
 
 In the end, it is just my personal opinion and can be ignored safely. Just ask your heart whats right and whats wrong. Also, please try to use it as a once in a while resource and not 24x7 so that others can avail the free resources too.
-## Instructions
-1. Download and upload the repository on your Google Drive.
-2. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.)
-3. Download [Cloudflared client](https://github.com/cloudflare/cloudflared/releases/) ask your friends to do the same.
-4. Run `Make a server` and accept EULA
-5. Run the first cell which runs the Minecraft server.
-6. In console you should have `Done!` for your server and `Your free public tunnel <tunnelname>` for your address
-7. Ask your clients and do it yourself an command where Cloudflared executable is kept.
-`cloudflared access tcp --hostname <tunnelname> --url 127.0.0.1:<anyport>`
-7. Add your server address `127.0.0.1:<anyport>`
-8. Now you should be all able to play the game! Congratulations!
+
+## :page_with_curl: Instructions
+1. Open the notebook in google colab.
+3. Read through the notebook, most of the code is self explanatory. Run the cells which are useful for your use-case.
+4. Run the first cell which runs the Minecraft server.
+5. Now you have two options. You can either use ngrok or cloudflare's argo. Ngrok is easy to setup and doesn't requires anything to be installed by the clients but it can often be quite unreliable. Argo doesn't have such limitations but requires a bit more work.
+  * Ngrok:
+    Change `tunnel_service` variable and follow the prompts.
+  * Cloudflare argo:
+    1. After running the first cell,`Your free tunnel has started! Visit it <tunnel_address>` would be logged in the notebook console.
+    2. Download [Cloudflared client](https://github.com/cloudflare/cloudflared/releases/) on all the client machines.
+    3. Now on your local machine, launch the binary with `./cloudflared-linux-amd64 access tcp --hostname <tunnel_address> --url 127.0.0.1:25565`
+    4. Finally, connect to `127.0.0.1:2556` from your minecraft client.
+
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
