@@ -13,13 +13,24 @@ Yes, Colab is free to use. But there are some points which, according to me one 
 3. One should not try to spread it as wildfire (in my opinion), that there's a free service available to every living being out there. If such a sudden boom in user base happens, Google would be forced to close down the free tier of google colab, devoiding many hobbists of the free service. Keep it like a secret, telling it to only those who are worthy and know how to use it.
 
 In the end, it is just my personal opinion and can be ignored safely. Just ask your heart whats right and whats wrong. Also, please try to use it as a once in a while resource and not 24x7 so that others can avail the free resources too.
+## Instructions
+1. Download and upload the repository on your Google Drive.
+2. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.)
+3. Download [Cloudflared client](https://github.com/cloudflare/cloudflared/releases/) ask your friends to do the same.
+4. Run `Make a server` and accept EULA
+5. Run the first cell which runs the Minecraft server.
+6. In console you should have `Done!` for your server and `Your free public tunnel <tunnelname>` for your address
+7. Ask your clients and do it yourself an command where Cloudflared executable is kept.
+`cloudflared access tcp --hostname <tunnelname> --url 127.0.0.1:<anyport>`
+7. Add your server address `127.0.0.1:<anyport>`
+8. Now you should be all able to play the game! Congratulations!
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
 2. Install Openjdk-15 (Java) through apt-get.
 3. Mount Google Drive to access the minecraft folder (Drive is used here to provide persistent storage).
-4. Setup Ngrok (by asking for key by user and opening a tunnel at port 25565).
-5. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.
+4. Setup Argo Tunnel (Opening a tunnel at port 25565).
+5. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.)
 6. List/Print the file list on the screen to indicate succesful directory change.
 7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/)
 
