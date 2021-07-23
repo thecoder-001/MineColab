@@ -30,10 +30,10 @@ In the end, it is just my personal opinion and can be ignored safely. Just ask y
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
-2. Install Openjdk-15 (Java) through apt-get.
+2. Install Openjdk-16 (Java) through apt-get.
 3. Mount Google Drive to access the minecraft folder (Drive is used here to provide persistent storage).
-4. Setup Argo Tunnel (Opening a tunnel at port 25565).
-5. Change directory to the minecraft-server folder on google drive (I have here used "Minecraft-server" as the server folder in the root directory of my Google Drive.)
+4. Setup Argo/ngrok Tunnel (Opening a tunnel at port 25565) depending on the `tunnel_service` variable.
+5. Change directory to the minecraft-server folder on google drive ("Minecraft-server" is the default, located in the root directory of my Google Drive.)
 6. List/Print the file list on the screen to indicate succesful directory change.
 7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/)
 
@@ -45,6 +45,7 @@ Or suggest a new feature using this [template](https://github.com/thecoder-001/M
 ## 👍 Tips
 - Use [RaiDrive](https://www.raidrive.com/) to manage your server's files
 - If something does not work, try using a VPN like [windscribe](https://windscribe.com) before opening an issue.
+- Switch between the two different tunnle providers and see which works best for you.
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
 
