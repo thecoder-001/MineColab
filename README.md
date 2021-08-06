@@ -49,5 +49,3 @@ Or suggest a new feature using this [template](https://github.com/thecoder-001/M
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
 
-[![test](https://user-images.githubusercontent.com/25097841/101589531-a2c98100-3a0e-11eb-872e-fefa791aaaf6.gif)](https://github.com/thecoder-001/MineColab)
-
