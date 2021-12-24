@@ -25,7 +25,7 @@ In the end, it is just my personal opinion and can be ignored safely. Just ask y
     1. After running the first cell,`Your free tunnel has started! Visit it <tunnel_address>` would be logged in the notebook console.
     2. Download [Cloudflared client](https://github.com/cloudflare/cloudflared/releases/) on all the client machines.
     3. Now on your local machine, launch the binary with `./cloudflared-linux-amd64 access tcp --hostname <tunnel_address> --url 127.0.0.1:25565`
-    4. Finally, connect to `127.0.0.1:2556` from your minecraft client.
+    4. Finally, connect to `127.0.0.1:25565` from your minecraft client.
 
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
