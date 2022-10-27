@@ -45,9 +45,9 @@ Report report the bug by creating a new issue and use this helpful [issue templa
 Or suggest a new feature using this [template](https://github.com/thecoder-001/MineColab/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=%5BFeature+Request%5D).
 
 ## 👍 Tips
-- Use [RaiDrive](https://www.raidrive.com/) to manage your server's files
 - If something does not work, try using a VPN like [windscribe](https://windscribe.com) before opening an issue.
-- Switch between the two different tunnel providers and see which works best for you.
+- Switch between the three different tunnel providers and see which works best for you.
+- Make regular backups of your world.
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/thecoder-001)
 
