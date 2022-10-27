@@ -18,7 +18,7 @@ In the end, it is just my personal opinion and can be ignored safely. Just ask y
 1. Open the notebook in google colab.
 3. Read through the notebook, most of the code is self explanatory. Run the cells which are useful for your use-case.
 4. Run the first cell which runs the Minecraft server.
-5. Now you have two options. You can either use ngrok or cloudflare's argo. Ngrok is easy to setup and doesn't requires anything to be installed by the clients but it can often be quite unreliable. Argo doesn't have such limitations but requires a bit more work.
+5. Now you have three options. You can either use ngrok, playit.gg or cloudflare's argo. Ngrok is easy to setup and doesn't requires anything to be installed by the clients but it can often be quite unreliable. Argo doesn't have such limitations but requires a bit more work. Playit.gg's implementation is unpolished at the moment (debug log spam) but offers convenient static subdomains.
   * Ngrok:
     Change `tunnel_service` variable and follow the prompts.
   * Cloudflare argo:
@@ -26,13 +26,15 @@ In the end, it is just my personal opinion and can be ignored safely. Just ask y
     2. Download [Cloudflared client](https://github.com/cloudflare/cloudflared/releases/) on all the client machines.
     3. Now on your local machine, launch the binary with `./cloudflared-linux-amd64 access tcp --hostname <tunnel_address> --url 127.0.0.1:25565`
     4. Finally, connect to `127.0.0.1:25565` from your minecraft client.
+  * Playit.gg:
+    Change `tunnel_service` variable, ignore the debug output _(todo:fix)_ and follow the prompts.
 
 ## :zap:  So, how does it actually work?
 As Google Colab is a VM running Ubuntu server as base OS, it can be easily used as a Minecraft server. Here are the steps which the notebook performs to setup the server:
 1. Update the system's apt cache.
 2. Install Openjdk-16 (Java) through apt-get.
 3. Mount Google Drive to access the minecraft folder (Drive is used here to provide persistent storage).
-4. Setup Argo/ngrok Tunnel (Opening a tunnel at port 25565) depending on the `tunnel_service` variable.
+4. Setup Argo/ngrok/playit Tunnel (Opening a tunnel at port 25565) depending on the `tunnel_service` variable.
 5. Change directory to the minecraft-server folder on google drive ("Minecraft-server" is the default, located in the root directory of my Google Drive.)
 6. List/Print the file list on the screen to indicate succesful directory change.
 7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/)
